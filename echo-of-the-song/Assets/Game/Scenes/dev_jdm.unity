@@ -212,7 +212,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335464074}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &335464076
 Camera:
   m_ObjectHideFlags: 0
@@ -520,6 +520,19 @@ Transform:
   m_Father: {fileID: 133770412}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1314334693 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5650144043129044766, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+  m_PrefabInstance: {fileID: 5650144043735877252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &1314334699
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314334693}
+  m_Enabled: 1
 --- !u!1 &1796322306
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,26 +674,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2068661792 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1115983051337982203, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
-  m_PrefabInstance: {fileID: 5650144043735877252}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2068661794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068661792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8812a2c37e387b4c9e2992f146b841e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistanceBetweenFootsteps: 0.9
-  previousFootstepPosition: {x: 0, y: 0, z: 0}
-  isStaying: 0
 --- !u!1001 &5650144043735877252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -736,5 +729,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: isLeftStepFirst
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: panMaxAmplitude
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: panMinAmplitude
+      value: 0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: pitchMaxAmplitude
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b520eab17bd056438aad372b31a61a8, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 778ec6813e392924694e9c769d1b2b23, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 58b319bc9b603d948b506eebcdc802dc, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ae9f580290f2224a82e1f7df7e4f243, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa5d79cf7a7740a4dab5f355771c037c, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa5d79cf7a7740a4dab5f355771c037c, type: 3}
+    - target: {fileID: 8113041719422568933, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: stepClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: aa5d79cf7a7740a4dab5f355771c037c, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
