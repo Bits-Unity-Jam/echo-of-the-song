@@ -8,6 +8,8 @@ TagManager:
   - ship
   - asteroid
   - RedZone
+  - YellowZone
+  - GreenZone
   layers:
   - Default
   - TransparentFX
@@ -44,4 +46,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: RedZone
+    uniqueID: 1720099963
     locked: 0

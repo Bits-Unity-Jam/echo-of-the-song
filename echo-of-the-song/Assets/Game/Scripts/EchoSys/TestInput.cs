@@ -26,7 +26,7 @@ public class TestInput : MonoBehaviour
 
     private void OnMouseClick(InputAction.CallbackContext ctx)
     {
-        _spawner.Spawn(_pos,20);
+        _spawner.Spawn(_pos,50);
     }
     
     private void OnMouseMove(InputAction.CallbackContext ctx)

@@ -3,13 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoMove.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/TestInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/TestInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.inputactions" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,10 +45,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16068">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12240">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16068" />
+      <option name="pid" value="12240" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -67,6 +67,7 @@
       <workItem from="1666984246409" duration="10678000" />
       <workItem from="1667022042837" duration="1569000" />
       <workItem from="1667023644295" duration="11743000" />
+      <workItem from="1667058625847" duration="10763000" />
     </task>
     <servers />
   </component>
@@ -94,17 +95,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs</url>
-          <line>20</line>
-          <properties documentPath="E:\Unity_Projects\GJ2022\echo-of-the-song\Assets\Game\Scripts\EchoSys\EchoSpawner.cs" initialLine="20" containingFunctionPresentation="method 'Spawn'">
+          <url>file://$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs</url>
+          <line>141</line>
+          <properties documentPath="E:\Unity_Projects\GJ2022\echo-of-the-song\Assets\Game\Scripts\EchoSys\EchoTrail.cs" initialLine="141" containingFunctionPresentation="method 'SetLifeTime'">
             <startOffsets>
-              <option value="400" />
+              <option value="2951" />
             </startOffsets>
             <endOffsets>
-              <option value="431" />
+              <option value="2965" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
