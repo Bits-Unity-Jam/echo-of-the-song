@@ -1,10 +1,10 @@
 using Mechanics.Damage;
 using System.Collections.Generic;
 
-namespace Mechanics.DetectorCollision
+namespace Mechanics.Detection
 {
     public interface IDetector
     {
-        public DetectionData Detect();
+        public IEnumerable<DetectionData> Detect();
     }
 }
