@@ -1,6 +1,4 @@
 using Mechanics.Damage;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Mechanics.HealtPoint
@@ -31,15 +29,6 @@ namespace Mechanics.HealtPoint
         public void Die()
         {
             gameObject.SetActive(false);
-        }
-
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.tag == "Enemy")
-            {
-                TakeDamage(5);
-                Debug.Log("Entered!");
-            }
         }
     }
 }
