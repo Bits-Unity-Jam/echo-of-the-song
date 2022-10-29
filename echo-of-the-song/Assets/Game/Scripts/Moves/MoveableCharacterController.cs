@@ -6,6 +6,7 @@ namespace Game.Scripts.Moves
     {
         [ SerializeField ]
         private CharacterController characterController;
+        
 
         [ Range(0, 30) ]
         [ SerializeField ]
@@ -24,7 +25,7 @@ namespace Game.Scripts.Moves
             
             characterController.Move(_direction * movementSpeed * Time.deltaTime);
             
-            transform.forward = _direction;
+            characterController.transform.up = _direction;
         }
     }
 }

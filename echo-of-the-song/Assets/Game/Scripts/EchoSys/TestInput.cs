@@ -1,40 +1,31 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class TestInput : MonoBehaviour
 {
-    [SerializeField] private EchoSpawner _spawner;
-    
     private Vector3 _pos;
     private PlayerInputs _playerInput;
 
-    [SerializeField] private PlayerInput _PlayerInput;
     private void Awake()
     {
         _playerInput = new PlayerInputs();
+    }
+
+    private void OnEnable()
+    {
         _playerInput.Enable();
-        _playerInput.DebugTest.MouseClick.performed+=ctx => OnMouseClick();
-        _playerInput.DebugTest.MouseMove.performed+=ctx => OnMouseMove(ctx.ReadValue<Vector3>());
-
-
-        _playerInput.Player.Move.performed += ctx => OnFOO();
-    }
-
-
-    private void OnFOO()
-    {
-        print("adfa");
+        _playerInput.Player.Fire.started += OnMouseClick;
     }
     
-    
-    private void OnMouseClick()
+    private void OnDisable()
     {
-       var pos =Camera.main.ScreenToWorldPoint(_pos);
-        _spawner.Spawn(pos,20);
+        _playerInput.Player.Fire.performed -= OnMouseClick;
+        _playerInput.Enable();
     }
-    
-    private void OnMouseMove(Vector3 pos)
+
+    private void OnMouseClick(InputAction.CallbackContext obj)
     {
-        _pos = pos;
+        Debug.Log("FirePressed!!!!!!");
     }
 }

@@ -59,7 +59,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolObject: {fileID: 2390265514926546563}
-  lifeTime: 10
+  footSprite: {fileID: 1609396982618041135}
+  lifeTime: 30
+  lastedLifeTime: 0
 --- !u!1 &8450728911008930801
 GameObject:
   m_ObjectHideFlags: 0

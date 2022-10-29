@@ -143,4 +143,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolObject: {fileID: 1918174999235400922}
-  lifeTime: 10
+  footSprite: {fileID: 9024010670967246403}
+  lifeTime: 30
+  lastedLifeTime: 0

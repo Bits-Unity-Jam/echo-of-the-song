@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d814856ca7c1452298bcffcb9e4b94c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startObjectCount: 30
+  startObjectCount: 50
   autoExpand: 1
   countToExpand: 20
 --- !u!114 &1029146722
@@ -678,8 +678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8812a2c37e387b4c9e2992f146b841e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  footStepCooldown: 1
-  canMakeFootstep: 1
+  maxDistanceBetweenFootsteps: 0.9
+  previousFootstepPosition: {x: 0, y: 0, z: 0}
   isStaying: 0
 --- !u!1001 &5650144043735877252
 PrefabInstance:

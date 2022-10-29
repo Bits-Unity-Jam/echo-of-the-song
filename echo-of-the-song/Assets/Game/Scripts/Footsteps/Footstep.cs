@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using Game.Mechanics.ObjectsPools;
+using Unity.Collections;
 using UnityEngine;
 
 namespace Game.Scripts.Footsteps
@@ -9,16 +11,39 @@ namespace Game.Scripts.Footsteps
         [ SerializeField ]
         private PoolObject poolObject;
 
-        [ Range(0, 15) ]
+        [SerializeField]
+        private SpriteRenderer footSprite;
+        
+        [ Range(10, 50) ]
         [ SerializeField ]
         private float lifeTime;
-
-        private void OnEnable() => StartCoroutine(LifetimeRoutine());
-
-        private IEnumerator LifetimeRoutine()
+        
+        [ReadOnly]
+        [ SerializeField ]
+        private float lastedLifeTime;
+        
+        private void OnEnable()
         {
-            yield return new WaitForSeconds(lifeTime);
-            poolObject.PushToPool();
+            lastedLifeTime = lifeTime;
+        }
+
+        private void Update()
+        {
+            lastedLifeTime -= Time.deltaTime;
+            
+            UpdateFootstepTransparency();
+            
+            if (lastedLifeTime <= 0)
+            {
+                poolObject.PushToPool();
+            }
+        }
+
+        private void UpdateFootstepTransparency()
+        {
+            var newColor =
+                new Color(footSprite.color.r, footSprite.color.g, footSprite.color.b, lastedLifeTime / lifeTime);
+            footSprite.color = newColor;
         }
     }
 }
