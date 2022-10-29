@@ -495,7 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
-  _poolSize: 200
+  _poolSize: 500
   _playerFootstepCreator: {fileID: 2042533514}
   rayCount: 50
 --- !u!1 &971410918
