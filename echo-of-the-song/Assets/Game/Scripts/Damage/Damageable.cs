@@ -9,8 +9,6 @@ namespace Mechanics.HealtPoint
         private float health = 100;
         [SerializeField]
         private string tagEnemy = "Enemy";
-        [SerializeField]
-        private LayerMask layerMask;
 
         public float Health
         {
