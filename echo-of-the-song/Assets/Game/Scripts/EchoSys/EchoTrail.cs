@@ -165,7 +165,7 @@ public class EchoTrail : MonoBehaviour
    }
    public void SetLifeTime(float lifeTime)
    {
-      _currentA = 1;
+      _currentA = 0.47f;
       Deactivate();
       _colorStep = (1 / (lifeTime / Time.fixedDeltaTime));
       EmmitWhite();

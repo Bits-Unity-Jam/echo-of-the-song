@@ -93,17 +93,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stepClips:
-  - {fileID: 8300000, guid: 82835673b58945949ac14a962cbeb11f, type: 3}
-  - {fileID: 8300000, guid: 56b132fb34b9d9c49990e272f7a5ff06, type: 3}
-  - {fileID: 8300000, guid: 4dff780580b7ef64e8023147f7b622a2, type: 3}
-  - {fileID: 8300000, guid: a1eb7aeb222bf0047a248f9c84058d33, type: 3}
-  - {fileID: 8300000, guid: b25b2b84d305b8848b1f96d53bbf89e6, type: 3}
-  - {fileID: 8300000, guid: cddff8b15b7da6d4eb06871204153c03, type: 3}
+  - {fileID: 8300000, guid: e6bad865a317a3e43a289d46f79a4eed, type: 3}
+  - {fileID: 8300000, guid: 5b79ee632ca48d44e8a7b3afd0e29a58, type: 3}
+  - {fileID: 8300000, guid: 6bb1febdfcb0b054994a3ee74ab2e06e, type: 3}
   isLeftStepFirst: 0
   audioSource: {fileID: 6512929109543687186}
   pitchMaxAmplitude: 0.2
-  panMaxAmplitude: 0.3
-  panMinAmplitude: 0.1
+  panMaxAmplitude: 0.39
+  panMinAmplitude: 0.21
   isLeftStepNext: 0
   _playerFootstepCreator: {fileID: 2068661794}
 --- !u!82 &6512929109543687186
@@ -291,8 +288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41456babbf1448dd8e948f3527a11dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterController: {fileID: 5650144043129044772}
-  movementSpeed: 1
+  playerRb: {fileID: 2129119964}
+  movementSpeed: 1.85
 --- !u!1 &5650144042511729955
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,8 +559,9 @@ GameObject:
   - component: {fileID: 5650144043129044763}
   - component: {fileID: 5650144043129044762}
   - component: {fileID: 5650144043129044761}
-  - component: {fileID: 5650144043129044772}
   - component: {fileID: 5650144043129044773}
+  - component: {fileID: 2129119964}
+  - component: {fileID: 2129119963}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -691,24 +689,6 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!143 &5650144043129044772
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5650144043129044766}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5650144043129044773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +701,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce087f2edc594ba8a17d9d29ef75a249, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!50 &2129119964
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650144043129044766}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 7
+  m_AngularDrag: 7
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
+--- !u!58 &2129119963
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5650144043129044766}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &5650144043281627294
 GameObject:
   m_ObjectHideFlags: 0

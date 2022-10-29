@@ -1,20 +1,34 @@
 using System;
 using System.Linq;
+using Game.Scripts.Footsteps;
 using UnityEngine;
 
 public class EchoSpawner : MonoBehaviour
 {
-    [SerializeField] private Echo echoMovePrefabs;
-    [SerializeField] private int _poolSize;
+    [ SerializeField ]
+    private Echo echoMovePrefabs;
+
+    [ SerializeField ]
+    private int _poolSize;
+
+    [ SerializeField ]
+    private PlayerFootstepCreator _playerFootstepCreator;
+
+    [Range(0, 50)]
+    [ SerializeField ]
+    private int rayCount;
 
     private Echo[] _echos;
 
     private void Start()
     {
+        _playerFootstepCreator.OnFootstepMade += HandleFootstepCreated;
         GeneratePool();
     }
 
-    public void Spawn(Vector3 pos,int count)
+    private void HandleFootstepCreated() => Spawn(_playerFootstepCreator.LastFootstepCenter, rayCount);
+
+    public void Spawn(Vector3 pos, int count)
     {
         try
         {
@@ -24,8 +38,8 @@ public class EchoSpawner : MonoBehaviour
             {
                 Echo freeEchoMove = _echos.First(echo => !echo.Activated);
                 Vector2 dir = Quaternion.Euler(0, 0, rotation) * Vector2.up;
-                freeEchoMove.Emmit(dir,pos);
-                rotation += step ;
+                freeEchoMove.Emmit(dir, pos);
+                rotation += step;
             }
         }
         catch (Exception e)
@@ -39,7 +53,7 @@ public class EchoSpawner : MonoBehaviour
         _echos = new Echo[_poolSize];
         for (int i = 0; i < _poolSize; i++)
         {
-            Echo echoMove = Instantiate(echoMovePrefabs,transform);
+            Echo echoMove = Instantiate(echoMovePrefabs, transform);
             _echos[i] = echoMove;
         }
     }

@@ -23,6 +23,9 @@ namespace Game.Scripts.Footsteps
         
         private IFactory<Footstep> _footstepFactory;
         private IMoveable<Vector2WorldSpaceData> _moveable;
+        private Footstep _lastFootstep;
+
+        public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
 
         public event Action OnFootstepMade;
 
@@ -62,10 +65,10 @@ namespace Game.Scripts.Footsteps
 
         public void CreateFootStep()
         {
-            Footstep footstep = _footstepFactory.Create();
+            _lastFootstep = _footstepFactory.Create();
 
             previousFootstepPosition = transform.position;
-            Transform footstepTransform = footstep.transform;
+            Transform footstepTransform = _lastFootstep.transform;
             
             footstepTransform.position = transform.position;
             footstepTransform.up = transform.up;
