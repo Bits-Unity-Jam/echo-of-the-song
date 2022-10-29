@@ -4,11 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
   - Wall
-=======
-  - Enemy
->>>>>>> origin/feature/damage-system
+  - ship
+  - asteroid
+  - RedZone
   layers:
   - Default
   - TransparentFX

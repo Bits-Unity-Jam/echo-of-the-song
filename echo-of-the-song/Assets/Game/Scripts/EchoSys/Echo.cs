@@ -12,6 +12,8 @@ public class Echo : MonoBehaviour
     
     [SerializeField] private float _lifeTime;
     [SerializeField]private float _speed;
+    
+    public bool IsActive => _currentColor.a > 0;
 
     private Vector3 _direction;
     private float _colorStep;
@@ -19,12 +21,14 @@ public class Echo : MonoBehaviour
 
     public void Start()
     {
+        /*Invoke(new Vector3(1,1));*/
+        
         _colorStep = (_currentColor.a / _lifeTime) *Time.deltaTime;
     }
 
     private void Update()
     {
-        if (_currentColor.a>0)
+        if (_currentColor.a > 0)
         {
             _currentColor.a -= _colorStep;
             _renderer.startColor=_currentColor;
@@ -39,17 +43,23 @@ public class Echo : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Wall"))
         {
-            var a =_cr.Distance(col);
-            _direction=Vector3.Reflect(_direction,a.normal);
+            var colliderDistance2D =_cr.Distance(col);
+            _direction=Vector3.Reflect(_direction,colliderDistance2D.normal);
         }
+
+        /*if (col.gameObject.CompareTag("RedZone"))
+        {
+            var colliderDistance2D =_cr.Distance(col);
+            colliderDistance2D.pointA;
+        }*/
     }
     
     public void Invoke(Vector3 dir)
     {
-        Color color= _renderer.startColor;
-        color.a = 1;
-        _renderer.startColor = color;
-        _renderer.endColor = color;
+        _currentColor.a = 1;
+        _renderer.startColor = _currentColor;
+        _renderer.endColor = _currentColor;
+        
         _direction = dir;
     }
     

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Echo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Echo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputActions/PlayerInputs.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Echo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Echo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EchoSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EchoSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666984243047</updated>
       <workItem from="1666984246409" duration="10678000" />
-      <workItem from="1667022042837" duration="298000" />
+      <workItem from="1667022042837" duration="1569000" />
+      <workItem from="1667023644295" duration="7374000" />
     </task>
     <servers />
   </component>
@@ -67,7 +77,50 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/TestInput.cs</url>
+          <line>25</line>
+          <properties documentPath="E:\Unity_Projects\GJ2022\echo-of-the-song\Assets\Game\Scripts\EchoSys\TestInput.cs" initialLine="25" containingFunctionPresentation="method 'OnMouseClick'">
+            <startOffsets>
+              <option value="726" />
+            </startOffsets>
+            <endOffsets>
+              <option value="749" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/TestInput.cs</url>
+          <line>30</line>
+          <properties documentPath="E:\Unity_Projects\GJ2022\echo-of-the-song\Assets\Game\Scripts\EchoSys\TestInput.cs" initialLine="30" containingFunctionPresentation="method 'OnMouseMove'">
+            <startOffsets>
+              <option value="817" />
+            </startOffsets>
+            <endOffsets>
+              <option value="828" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
