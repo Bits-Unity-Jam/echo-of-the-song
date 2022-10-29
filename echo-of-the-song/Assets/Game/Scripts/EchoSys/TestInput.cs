@@ -4,28 +4,33 @@ using UnityEngine.InputSystem;
 
 public class TestInput : MonoBehaviour
 {
-    private Vector3 _pos;
-    private PlayerInputs _playerInput;
+    [SerializeField] private EchoSpawner _spawner;
+
+    private PlayerInputs _inputs;
+    private Vector2 _pos;
 
     private void Awake()
     {
-        _playerInput = new PlayerInputs();
+        _inputs = new PlayerInputs();
     }
+
 
     private void OnEnable()
     {
-        _playerInput.Enable();
-        _playerInput.Player.Fire.started += OnMouseClick;
-    }
-    
-    private void OnDisable()
-    {
-        _playerInput.Player.Fire.performed -= OnMouseClick;
-        _playerInput.Enable();
+        _inputs.Enable();
+        _inputs.DebugTest.Enable();
+        _inputs.DebugTest.MouseClick.performed += OnMouseClick;
+        _inputs.DebugTest.MouseMove.performed += OnMouseMove;
     }
 
-    private void OnMouseClick(InputAction.CallbackContext obj)
+
+    private void OnMouseClick(InputAction.CallbackContext ctx)
     {
-        Debug.Log("FirePressed!!!!!!");
+        _spawner.Spawn(_pos,50);
+    }
+    
+    private void OnMouseMove(InputAction.CallbackContext ctx)
+    {
+        _pos = Camera.main.ScreenToWorldPoint(ctx.ReadValue<Vector2>());
     }
 }

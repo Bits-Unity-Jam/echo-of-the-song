@@ -1,12 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
 public class EchoSpawner : MonoBehaviour
 {
-    [SerializeField] private Echo _echoPrefabs;
+    [SerializeField] private Echo echoMovePrefabs;
     [SerializeField] private int _poolSize;
 
     private Echo[] _echos;
@@ -14,20 +12,25 @@ public class EchoSpawner : MonoBehaviour
     private void Start()
     {
         GeneratePool();
-        Spawn(transform.position, 20);
     }
 
     public void Spawn(Vector3 pos,int count)
     {
-        float rotation = 0;
-        float step = 360 / count;
-        for (int i = 0; i < count; i++)
+        try
         {
-            Echo freeEcho = _echos.First(echo => !echo.IsActive);
-            freeEcho.transform.position = transform.position;
-            Vector3 dir = Quaternion.Euler(0, 0, rotation) * Vector3.up;
-            freeEcho.Invoke(dir);
-            rotation += step ;
+            float rotation = 0;
+            float step = 360 / (float)count;
+            for (int i = 0; i < count; i++)
+            {
+                Echo freeEchoMove = _echos.First(echo => !echo.Activated);
+                Vector2 dir = Quaternion.Euler(0, 0, rotation) * Vector2.up;
+                freeEchoMove.Emmit(dir,pos);
+                rotation += step ;
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning(e);
         }
     }
 
@@ -36,8 +39,8 @@ public class EchoSpawner : MonoBehaviour
         _echos = new Echo[_poolSize];
         for (int i = 0; i < _poolSize; i++)
         {
-            Echo echo = Instantiate(_echoPrefabs,transform);
-            _echos[i] = echo;
+            Echo echoMove = Instantiate(echoMovePrefabs,transform);
+            _echos[i] = echoMove;
         }
     }
 }
