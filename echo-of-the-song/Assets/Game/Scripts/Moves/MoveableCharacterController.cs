@@ -5,9 +5,8 @@ namespace Game.Scripts.Moves
     public class MoveableCharacterController : MonoBehaviour, IMoveable<Vector2WorldSpaceData>
     {
         [ SerializeField ]
-        private CharacterController characterController;
+        private Rigidbody2D playerRb;
         
-
         [ Range(0, 30) ]
         [ SerializeField ]
         private float movementSpeed;
@@ -22,10 +21,10 @@ namespace Game.Scripts.Moves
         public void Update()
         {
             if (_direction == default) { return; }
+
+            playerRb.velocity = _direction * movementSpeed;
             
-            characterController.Move(_direction * movementSpeed * Time.deltaTime);
-            
-            characterController.transform.up = _direction;
+            playerRb.transform.up = _direction;
         }
     }
 }

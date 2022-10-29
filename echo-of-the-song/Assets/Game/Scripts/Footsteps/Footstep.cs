@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using Game.Mechanics.ObjectsPools;
 using Unity.Collections;
 using UnityEngine;
@@ -21,6 +19,7 @@ namespace Game.Scripts.Footsteps
         [ReadOnly]
         [ SerializeField ]
         private float lastedLifeTime;
+        public Vector3 SpriteCenter => footSprite.transform.position;
         
         private void OnEnable()
         {
