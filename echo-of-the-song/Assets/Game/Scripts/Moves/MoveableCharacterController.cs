@@ -6,6 +6,7 @@ namespace Game.Scripts.Moves
     {
         [ SerializeField ]
         private CharacterController characterController;
+        
 
         [ Range(0, 30) ]
         [ SerializeField ]
@@ -13,9 +14,18 @@ namespace Game.Scripts.Moves
 
         private Vector3 _direction;
 
+        public Vector3 MovementDirection => _direction;
+
         public void HandleDirection(Vector2WorldSpaceData direction) => 
             _direction = new Vector3(direction.Vector.x, direction.Vector.y, 0);
 
-        public void Update() => characterController.Move(_direction * movementSpeed * Time.deltaTime);
+        public void Update()
+        {
+            if (_direction == default) { return; }
+            
+            characterController.Move(_direction * movementSpeed * Time.deltaTime);
+            
+            characterController.transform.up = _direction;
+        }
     }
 }
