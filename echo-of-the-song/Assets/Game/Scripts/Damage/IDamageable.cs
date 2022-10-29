@@ -1,4 +1,4 @@
-namespace Mechanics.Damage
+namespace Game.Scripts.Damage
 {
     public interface IDamageable
     {
