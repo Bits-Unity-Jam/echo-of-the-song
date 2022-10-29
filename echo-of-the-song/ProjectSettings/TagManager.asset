@@ -10,6 +10,7 @@ TagManager:
   - RedZone
   - YellowZone
   - GreenZone
+  - WayPoint
   layers:
   - Default
   - TransparentFX
