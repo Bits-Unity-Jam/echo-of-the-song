@@ -26,20 +26,21 @@ public class SimpleAiMovement : MonoBehaviour
 
     private void Update()
     {
-        var distance = Vector2.Distance(gameObject.transform.position, target.transform.position);
-        if (distance < trigerDistance)
-        {
-            isTrigered = true;
-        }
+        agent.SetDestination(target.position);
+        //var distance = Vector2.Distance(gameObject.transform.position, target.transform.position);
+        //if (distance < trigerDistance)
+        //{
+        //    isTrigered = true;
+        //}
 
-        if (distance > escapeDistance)
-        {
-            isTrigered = false;
-        }
+        //if (distance > escapeDistance)
+        //{
+        //    isTrigered = false;
+        //}
 
-        if (isTrigered)
-        {
-            agent.SetDestination(target.position);
-        }
+        //if (isTrigered)
+        //{
+        //    agent.SetDestination(target.position);
+        //}
     }
 }
