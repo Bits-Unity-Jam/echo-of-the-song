@@ -624,7 +624,7 @@ TrailRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 0.20784314}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -725,9 +725,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cr: {fileID: 1667103968}
   _renderer: {fileID: 1667103964}
-  _endColor: {r: 1, g: 1, b: 1, a: 0}
-  _speedDis: 0.1
-  _speed: 2
+  _currentColor: {r: 1, g: 1, b: 1, a: 1}
+  _lifeTime: 7
+  _speed: 3
 --- !u!1 &1918594875
 GameObject:
   m_ObjectHideFlags: 0
@@ -744,7 +744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1918594876
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,29 +7,30 @@ public class Echo : MonoBehaviour
 {
     [SerializeField] private CircleCollider2D _cr;
     [SerializeField] private TrailRenderer _renderer;
-    [SerializeField] private Color _endColor;
-    [SerializeField] private float _speedDis;
+    
+    [SerializeField] private Color _currentColor;
+    
+    [SerializeField] private float _lifeTime;
     [SerializeField]private float _speed;
 
     private Vector3 _direction;
+    private float _colorStep;
 
 
     public void Start()
     {
-        Invoke(new Vector3(1,1));
+        _colorStep = (_currentColor.a / _lifeTime) *Time.deltaTime;
     }
 
     private void Update()
     {
-        if (_renderer.startColor.a>0)
+        if (_currentColor.a>0)
         {
-            _renderer.startColor=Color.LerpUnclamped(_renderer.startColor,_endColor, Time.deltaTime);
-            _renderer.endColor=Color.LerpUnclamped( _renderer.endColor,_endColor, Time.deltaTime);
+            _currentColor.a -= _colorStep;
+            _renderer.startColor=_currentColor;
+            _renderer.endColor=_currentColor;
+            
             transform.Translate(_direction*_speed*Time.deltaTime);
-        }
-        else
-        {
-            print("End");
         }
     }
     
