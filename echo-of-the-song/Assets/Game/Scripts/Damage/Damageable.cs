@@ -1,4 +1,5 @@
 using Mechanics.Damage;
+using Mechanics.DetectorCollision;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ namespace Mechanics.HealtPoint
         private float health = 100;
         [SerializeField]
         private string tagEnemy = "Enemy";
+        [SerializeField]
+        private LayerMask layerMask;
 
         public float Health
         {
@@ -33,13 +36,22 @@ namespace Mechanics.HealtPoint
             gameObject.SetActive(false);
         }
 
-        private void OnCollisionEnter2D(Collision2D other)
+        public IEnumerable Detect()
         {
-            if (other.gameObject.tag == "Enemy")
+            DetectionData[] detectionData = new DetectionData[] { };
+            Collider[] hitColliders = Physics.OverlapSphere(transform.position, 1f, layerMask);
+
+            if (hitColliders.Length > 0)
             {
-                TakeDamage(5);
-                Debug.Log("Entered!");
+                for (int i = 0; i < hitColliders.Length; i++)
+                {
+                    detectionData[i].distance = Vector3.Distance(transform.position, hitColliders[i].transform.position);
+                    detectionData[i].direction = transform.position - hitColliders[i].transform.position;
+                    detectionData[i].transformObject = hitColliders[i].transform;
+                }
             }
+
+            return detectionData;
         }
     }
 }
