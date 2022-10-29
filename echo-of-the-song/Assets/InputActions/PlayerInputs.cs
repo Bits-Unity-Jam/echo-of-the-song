@@ -793,6 +793,15 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""KeyPress"",
+                    ""type"": ""Button"",
+                    ""id"": ""a6a44fdb-dd6b-459b-ae3d-c9983c22d44d"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -815,6 +824,17 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""MouseMove"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f433c426-bf9c-46f1-8e82-48077cf4a3e8"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""KeyPress"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -905,6 +925,7 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
         m_DebugTest = asset.FindActionMap("DebugTest", throwIfNotFound: true);
         m_DebugTest_MouseClick = m_DebugTest.FindAction("MouseClick", throwIfNotFound: true);
         m_DebugTest_MouseMove = m_DebugTest.FindAction("MouseMove", throwIfNotFound: true);
+        m_DebugTest_KeyPress = m_DebugTest.FindAction("KeyPress", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -1120,12 +1141,14 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     private IDebugTestActions m_DebugTestActionsCallbackInterface;
     private readonly InputAction m_DebugTest_MouseClick;
     private readonly InputAction m_DebugTest_MouseMove;
+    private readonly InputAction m_DebugTest_KeyPress;
     public struct DebugTestActions
     {
         private @PlayerInputs m_Wrapper;
         public DebugTestActions(@PlayerInputs wrapper) { m_Wrapper = wrapper; }
         public InputAction @MouseClick => m_Wrapper.m_DebugTest_MouseClick;
         public InputAction @MouseMove => m_Wrapper.m_DebugTest_MouseMove;
+        public InputAction @KeyPress => m_Wrapper.m_DebugTest_KeyPress;
         public InputActionMap Get() { return m_Wrapper.m_DebugTest; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1141,6 +1164,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @MouseMove.started -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnMouseMove;
                 @MouseMove.performed -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnMouseMove;
                 @MouseMove.canceled -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnMouseMove;
+                @KeyPress.started -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnKeyPress;
+                @KeyPress.performed -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnKeyPress;
+                @KeyPress.canceled -= m_Wrapper.m_DebugTestActionsCallbackInterface.OnKeyPress;
             }
             m_Wrapper.m_DebugTestActionsCallbackInterface = instance;
             if (instance != null)
@@ -1151,6 +1177,9 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
                 @MouseMove.started += instance.OnMouseMove;
                 @MouseMove.performed += instance.OnMouseMove;
                 @MouseMove.canceled += instance.OnMouseMove;
+                @KeyPress.started += instance.OnKeyPress;
+                @KeyPress.performed += instance.OnKeyPress;
+                @KeyPress.canceled += instance.OnKeyPress;
             }
         }
     }
@@ -1223,5 +1252,6 @@ public partial class @PlayerInputs : IInputActionCollection2, IDisposable
     {
         void OnMouseClick(InputAction.CallbackContext context);
         void OnMouseMove(InputAction.CallbackContext context);
+        void OnKeyPress(InputAction.CallbackContext context);
     }
 }

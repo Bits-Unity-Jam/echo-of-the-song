@@ -22,8 +22,7 @@ public class Echo : MonoBehaviour
     public void Start()
     {
         /*Invoke(new Vector3(1,1));*/
-        
-        _colorStep = (_currentColor.a / _lifeTime) *Time.deltaTime;
+        _colorStep = (1/ _lifeTime) *Time.deltaTime;
     }
 
     private void Update()
@@ -35,6 +34,10 @@ public class Echo : MonoBehaviour
             _renderer.endColor=_currentColor;
             
             transform.Translate(_direction*_speed*Time.deltaTime);
+        }
+        else
+        {
+            _renderer.Clear();
         }
     }
     
@@ -49,13 +52,13 @@ public class Echo : MonoBehaviour
 
         /*if (col.gameObject.CompareTag("RedZone"))
         {
-            var colliderDistance2D =_cr.Distance(col);
-            colliderDistance2D.pointA;
+            _renderer.bounds.
         }*/
     }
     
     public void Invoke(Vector3 dir)
     {
+        _renderer.Clear();
         _currentColor.a = 1;
         _renderer.startColor = _currentColor;
         _renderer.endColor = _currentColor;

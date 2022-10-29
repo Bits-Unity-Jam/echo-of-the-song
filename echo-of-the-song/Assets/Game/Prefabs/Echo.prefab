@@ -109,7 +109,7 @@ TrailRenderer:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
       key1: {r: 1, g: 1, b: 1, a: 1}
-      key2: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1, g: 0, b: 0, a: 1}
       key3: {r: 1, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
@@ -195,5 +195,5 @@ MonoBehaviour:
   _cr: {fileID: 2224683431450893011}
   _renderer: {fileID: 2224683431450893039}
   _currentColor: {r: 1, g: 1, b: 1, a: 0}
-  _lifeTime: 7
-  _speed: 3
+  _lifeTime: 3.5
+  _speed: 5

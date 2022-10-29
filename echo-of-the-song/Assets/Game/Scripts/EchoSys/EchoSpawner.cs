@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -14,17 +12,16 @@ public class EchoSpawner : MonoBehaviour
     private void Start()
     {
         GeneratePool();
-        Spawn(transform.position, 20);
     }
 
     public void Spawn(Vector3 pos,int count)
     {
         float rotation = 0;
-        float step = 360 / count;
+        float step = 360 / (float)count;
         for (int i = 0; i < count; i++)
         {
             Echo freeEcho = _echos.First(echo => !echo.IsActive);
-            freeEcho.transform.position = transform.position;
+            freeEcho.transform.position = pos;
             Vector3 dir = Quaternion.Euler(0, 0, rotation) * Vector3.up;
             freeEcho.Invoke(dir);
             rotation += step ;

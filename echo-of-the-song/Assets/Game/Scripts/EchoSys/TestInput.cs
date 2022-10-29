@@ -1,40 +1,36 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class TestInput : MonoBehaviour
 {
     [SerializeField] private EchoSpawner _spawner;
-    
-    private Vector3 _pos;
-    private PlayerInputs _playerInput;
 
-    [SerializeField] private PlayerInput _PlayerInput;
+    private PlayerInputs _inputs;
+    private Vector2 _pos;
+
     private void Awake()
     {
-        _playerInput = new PlayerInputs();
-        _playerInput.Enable();
-        _playerInput.DebugTest.MouseClick.performed+=ctx => OnMouseClick();
-        _playerInput.DebugTest.MouseMove.performed+=ctx => OnMouseMove(ctx.ReadValue<Vector3>());
-
-
-        _playerInput.Player.Move.performed += ctx => OnFOO();
+        _inputs = new PlayerInputs();
     }
 
 
-    private void OnFOO()
+    private void OnEnable()
     {
-        print("adfa");
+        _inputs.Enable();
+        _inputs.DebugTest.Enable();
+        _inputs.DebugTest.MouseClick.performed += OnMouseClick;
+        _inputs.DebugTest.MouseMove.performed += OnMouseMove;
+    }
+
+
+    private void OnMouseClick(InputAction.CallbackContext ctx)
+    {
+        _spawner.Spawn(_pos,20);
     }
     
-    
-    private void OnMouseClick()
+    private void OnMouseMove(InputAction.CallbackContext ctx)
     {
-       var pos =Camera.main.ScreenToWorldPoint(_pos);
-        _spawner.Spawn(pos,20);
-    }
-    
-    private void OnMouseMove(Vector3 pos)
-    {
-        _pos = pos;
+        _pos = Camera.main.ScreenToWorldPoint(ctx.ReadValue<Vector2>());
     }
 }
