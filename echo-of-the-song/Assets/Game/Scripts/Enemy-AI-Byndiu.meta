@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:echo-of-the-song/Assets/Game/Models/Footsteps.meta
+guid: f66bd5fc0e28f1f49ab4322cbf047ac3
+========
+guid: 10ed8abfa2b0c33449e95f3d26c2b6ff
+>>>>>>>> feature/enemy:echo-of-the-song/Assets/Enemy-AI-Byndiu.meta
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
