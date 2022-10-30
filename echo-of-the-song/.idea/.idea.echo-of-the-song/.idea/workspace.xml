@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy-AI-Byndiu.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy-AI-Byndiu.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/Footstep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/Footstep.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Moves/MoveableCharacterController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Moves/MoveableCharacterController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NavMeshPlus-master/NavMeshComponents/Editor.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
