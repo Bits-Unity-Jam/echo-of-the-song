@@ -39,11 +39,15 @@ public class SimpleAiMovement : MonoBehaviour
     private void Update()
     {
         //agent.SetDestination(target.position);
-        FollowPlayerMove();
 
-        if (!_isTrigeredByPlayer)
+        if (target != null)
         {
-            PathMove();
+            FollowPlayerMove();
+
+            if (!_isTrigeredByPlayer)
+            {
+                PathMove();
+            }
         }
 
         //var distance = Vector2.Distance(gameObject.transform.position, target.transform.position);

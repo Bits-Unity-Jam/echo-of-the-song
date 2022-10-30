@@ -11,6 +11,7 @@ TagManager:
   - YellowZone
   - GreenZone
   - WayPoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
