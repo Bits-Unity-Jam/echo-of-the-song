@@ -24,7 +24,6 @@ public class EchoAlongFootStep : MonoBehaviour
 
     private void OnFootstepMade()
     {
-        Debug.Log("rays!");
         _echoSpawner.Spawn(_footstepCreator.LastFootstepCenter, _rayCount);
     }
 }
