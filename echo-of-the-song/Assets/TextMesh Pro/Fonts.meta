@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:echo-of-the-song/Assets/TextMesh Pro/Fonts.meta
 guid: 6ab70aee4d56447429c680537fbf93ed
+=======
+guid: bfde58d358becad4bb3c3fe6dfc150ca
+>>>>>>> origin/feature/enemy:echo-of-the-song/Assets/Game/Scripts/Installers.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
