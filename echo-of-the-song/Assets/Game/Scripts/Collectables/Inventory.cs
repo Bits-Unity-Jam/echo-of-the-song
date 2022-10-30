@@ -16,10 +16,12 @@ namespace Mechanics.Collectable
             ChangedAmount?.Invoke(_collectablesAmount);
         }
         
-        public void GiveAllItem()
+        public int GiveItem()
         {
+            int amount = _collectablesAmount;
             _collectablesAmount = 0;
             ChangedAmount?.Invoke(_collectablesAmount);
+            return amount;
         }
     }
 }

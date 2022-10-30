@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using Mechanics.Collectable;
 using UnityEngine;
 
-public class OnCollectDestroyer : MonoBehaviour
+public class OnCollection : MonoBehaviour
 {
-    [SerializeField] private float _delay;
+    [SerializeField] private float _destroyDelay;
     [SerializeField] private CollectItem _collectItem;
+    [SerializeField] private EchoSpawner _echoSpawner;
 
     private void OnEnable()
     {
@@ -21,6 +22,7 @@ public class OnCollectDestroyer : MonoBehaviour
 
     private void OnCollect()
     {
-        Destroy(gameObject,_delay);
+        _echoSpawner.Spawn(transform.position,50);
+        Destroy(gameObject,_destroyDelay);
     }
 }

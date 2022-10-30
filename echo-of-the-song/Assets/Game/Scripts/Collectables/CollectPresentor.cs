@@ -16,6 +16,11 @@ namespace Mechanics.Collectable
                 _inventory.AddItem();
             }
         }
+
+        public int GetItemAmount()
+        {
+            return _inventory.GiveItem();
+        }
         
     }
 }

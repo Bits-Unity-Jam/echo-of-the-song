@@ -10,23 +10,16 @@ public class EchoSpawner : MonoBehaviour
 
     [ SerializeField ]
     private int _poolSize;
-
-    [ SerializeField ]
-    private PlayerFootstepCreator _playerFootstepCreator;
-
-    [Range(0, 50)]
-    [ SerializeField ]
-    private int rayCount;
+    
+    
 
     private Echo[] _echos;
 
     private void Start()
     {
-        _playerFootstepCreator.OnFootstepMade += HandleFootstepCreated;
         GeneratePool();
     }
-
-    private void HandleFootstepCreated() => Spawn(_playerFootstepCreator.LastFootstepCenter, rayCount);
+    
 
     public void Spawn(Vector3 pos, int count)
     {

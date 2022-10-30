@@ -98,6 +98,7 @@ public class EchoTrail : MonoBehaviour
 
    private void HandleIntersection(IntersectionArea area)
    {
+      if (!Activated) return;
       _currentTail.renderer.emitting = false;
       
       switch (area)
