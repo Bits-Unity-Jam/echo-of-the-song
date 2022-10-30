@@ -29,7 +29,7 @@ public class Echo : MonoBehaviour
     {
         if (Activated&&_currentTime >= 0)
         {
-            _currentTime -= Time.fixedDeltaTime;
+            _currentTime -= Time.fixedDeltaTime*2;
         }
         else if(Activated)
         {

@@ -10,6 +10,7 @@ TagManager:
   - RedZone
   - YellowZone
   - GreenZone
+  - Ruta
   layers:
   - Default
   - TransparentFX
