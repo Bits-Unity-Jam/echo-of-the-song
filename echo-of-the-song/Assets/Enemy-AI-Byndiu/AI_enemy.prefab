@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5046046427296040785}
   - component: {fileID: 5046046427296040798}
   - component: {fileID: 1876359739712657093}
+  - component: {fileID: 1016079556}
+  - component: {fileID: 1016079557}
   m_Layer: 0
   m_Name: AI_enemy
   m_TagString: Enemy
@@ -123,8 +125,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   path: {fileID: 0}
   target: {fileID: 0}
-  trigerDistance: 2
-  escapeDistance: 4
+  trigerDistance: 10
+  escapeDistance: 20
 --- !u!58 &1876359739712657093
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -141,3 +143,34 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &1016079556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046046427296040799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78f2a027a529e3d4b85d408dad7d42f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _EchoSpawner: {fileID: 1016079557}
+  _time: 5
+  _rayCount: 10
+--- !u!114 &1016079557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5046046427296040799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d585728cb877e44bbe9ff0f6a59c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
+  _poolSize: 50
+  _rayType: 0
+  _constant: 1

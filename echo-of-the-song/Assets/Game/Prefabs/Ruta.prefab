@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8063251979069450880}
   - component: {fileID: 8063251979069450883}
   - component: {fileID: 8063251979069450895}
+  - component: {fileID: 152319240}
   m_Layer: 0
   m_Name: Ruta
   m_TagString: GreenZone
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 8063251979069450882}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.983, y: 2.429, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,7 +103,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6
+  m_Radius: 2.4
 --- !u!114 &8063251979069450883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,5 +128,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2498aa031c070a343a1aecf68597625f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delay: 1
+  _destroyDelay: 2
   _collectItem: {fileID: 8063251979069450883}
+  _echoSpawner: {fileID: 152319240}
+--- !u!114 &152319240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8063251979069450882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d585728cb877e44bbe9ff0f6a59c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
+  _poolSize: 50
+  _rayType: 3
+  _constant: 1

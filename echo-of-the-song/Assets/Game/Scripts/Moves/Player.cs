@@ -31,15 +31,16 @@ namespace Game.Scripts.Moves
 
         public void Die()
         {
-            OnDie.Invoke();
+            OnDie?.Invoke();
             Destroy(gameObject);
         }
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            if (collision.gameObject.tag == "Enemy")
+            if (collision.gameObject.CompareTag("Enemy"))
             {
-                Die();
+                /*Die();*/
+                Debug.Log("Die!!!!!!!!!!!!!!!!!");
             }
         }
     }

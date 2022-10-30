@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskCollection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskPresentor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskPresentor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Echo.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/EchoSpawner.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/EchoSpawner.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/ForPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/ForPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Main Camera.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Main Camera.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Ruta.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Ruta.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Moves/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Moves/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/UI/GameplayCanvas/Hud/InventoryView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/UI/GameplayCanvas/Hud/InventoryView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +87,7 @@
       <workItem from="1666984246409" duration="10678000" />
       <workItem from="1667022042837" duration="1569000" />
       <workItem from="1667023644295" duration="7374000" />
-      <workItem from="1667111478897" duration="1167000" />
+      <workItem from="1667111478897" duration="3128000" />
     </task>
     <servers />
   </component>
@@ -102,5 +110,24 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Game/Scripts/Singer/TimeEchoSpawn.cs</url>
+          <line>23</line>
+          <properties documentPath="E:\Unity_Projects\GJ2022\echo-of-the-song\Assets\Game\Scripts\Singer\TimeEchoSpawn.cs" initialLine="23" containingFunctionPresentation="method 'Update'">
+            <startOffsets>
+              <option value="465" />
+            </startOffsets>
+            <endOffsets>
+              <option value="514" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
