@@ -11,22 +11,20 @@ public class EchoSpawner : MonoBehaviour
     [ SerializeField ]
     private int _poolSize;
 
-    [ SerializeField ]
-    private PlayerFootstepCreator _playerFootstepCreator;
+    [SerializeField] private
+        IntersectionArea _rayType;
 
-    [Range(0, 50)]
-    [ SerializeField ]
-    private int rayCount;
+    [SerializeField] private bool _constant;
+    
+    
 
     private Echo[] _echos;
 
     private void Start()
     {
-        _playerFootstepCreator.OnFootstepMade += HandleFootstepCreated;
         GeneratePool();
     }
-
-    private void HandleFootstepCreated() => Spawn(_playerFootstepCreator.LastFootstepCenter, rayCount);
+    
 
     public void Spawn(Vector3 pos, int count)
     {
@@ -38,7 +36,7 @@ public class EchoSpawner : MonoBehaviour
             {
                 Echo freeEchoMove = _echos.First(echo => !echo.Activated);
                 Vector2 dir = Quaternion.Euler(0, 0, rotation) * Vector2.up;
-                freeEchoMove.Emmit(dir, pos);
+                freeEchoMove.Emmit(dir, pos,_rayType,_constant);
                 rotation += step;
             }
         }

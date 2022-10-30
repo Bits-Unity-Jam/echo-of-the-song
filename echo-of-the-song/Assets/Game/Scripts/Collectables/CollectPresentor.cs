@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,24 +7,20 @@ namespace Mechanics.Collectable
     public class CollectPresentor : MonoBehaviour
     {
         [SerializeField]
-        private CollectablesManager collectablesManager;
+        private Inventory _inventory;
 
-        private ICollectable _ICollectable;
-
-        public void Awake()
+        private void OnTriggerEnter2D(Collider2D col)
         {
-            _ICollectable = GetComponent<ICollectable>();
-            _ICollectable.Collect += ChangeCountItem;
+            if (col.gameObject.TryGetComponent(out ICollectable item ))
+            {
+                _inventory.AddItem();
+            }
         }
 
-        private void OnDisable()
+        public int GetItemAmount()
         {
-            _ICollectable.Collect -= ChangeCountItem;
+            return _inventory.GiveItem();
         }
-
-        private void ChangeCountItem()
-        {
-            collectablesManager.ChangeCountItem();
-        }
+        
     }
 }

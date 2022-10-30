@@ -1,13 +1,12 @@
 using System;
 using System.Collections;
-using Game.Scripts.Moves;
 using Unity.Collections;
 using UnityEngine;
 using Zenject;
 
 namespace Game.Scripts.Footsteps
 {
-    public class PlayerFootstepCreator : MonoBehaviour
+    public class PlayerFootstepCreator : BaseFootstepCreator
     {
         [ Range(0, 2) ]
         [ SerializeField ]
@@ -22,33 +21,34 @@ namespace Game.Scripts.Footsteps
         public bool isStaying;
         
         private IFactory<Footstep> _footstepFactory;
-        private IMoveable<Vector2WorldSpaceData> _moveable;
         private Footstep _lastFootstep;
+        private Vector3 _lastPosition;
 
         public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
 
         public event Action OnFootstepMade;
 
         [Inject]
-        private void Construct(IFactory<Footstep> footstepFactory, IMoveable<Vector2WorldSpaceData> moveable)
+        private void Construct(IFactory<PlayerFootstep> footstepFactory)
         {
             _footstepFactory = footstepFactory;
-            _moveable = moveable;
         }
 
         private void Update()
         {
-            if (_moveable.MovementDirection == default && isStaying == false)
+            var delta = Vector3.Distance(_lastPosition, transform.position);
+            _lastPosition = transform.position;
+            
+            switch (delta)
             {
-                isStaying = true;
-                StartCoroutine(DoubleFootstepRoutine());
-                return;
-            }
-
-            if (_moveable.MovementDirection != default)
-            {
-               isStaying = false;
-               StopAllCoroutines();
+                case < 0.0001f when isStaying == false:
+                    isStaying = true;
+                    StartCoroutine(DoubleFootstepRoutine());
+                    return;
+                case > 0.01f:
+                    isStaying = false;
+                    StopAllCoroutines();
+                    break;
             }
 
             if (Vector3.Distance(previousFootstepPosition, transform.position) < 
@@ -60,7 +60,7 @@ namespace Game.Scripts.Footsteps
         private void MakeFootstep()
         {
             CreateFootStep();
-            OnFootstepMade?.Invoke();
+            SendFootstepMade();
         }
 
         public void CreateFootStep()

@@ -1,7 +1,7 @@
-using Mechanics.Damage;
+using System;
 using UnityEngine;
 
-namespace Mechanics.HealtPoint
+namespace Game.Scripts.Damage
 {
     public class Damageable : MonoBehaviour, IDamageable
     {
@@ -10,6 +10,8 @@ namespace Mechanics.HealtPoint
         [SerializeField]
         private string tagEnemy = "Enemy";
 
+        public event Action OnDied;
+        
         public float Health
         {
             get => health;
@@ -29,6 +31,7 @@ namespace Mechanics.HealtPoint
         public void Die()
         {
             gameObject.SetActive(false);
+            OnDied?.Invoke();
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Game.Scripts.Footsteps
 {
-    public class Footstep : MonoBehaviour
+    public abstract class Footstep : MonoBehaviour
     {
         [ SerializeField ]
         private PoolObject poolObject;
@@ -12,7 +12,7 @@ namespace Game.Scripts.Footsteps
         [SerializeField]
         private SpriteRenderer footSprite;
         
-        [ Range(10, 50) ]
+        [ Range(0, 50) ]
         [ SerializeField ]
         private float lifeTime;
         

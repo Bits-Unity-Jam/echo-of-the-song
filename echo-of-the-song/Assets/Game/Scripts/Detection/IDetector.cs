@@ -1,4 +1,3 @@
-using Mechanics.Damage;
 using System.Collections.Generic;
 
 namespace Mechanics.Detection

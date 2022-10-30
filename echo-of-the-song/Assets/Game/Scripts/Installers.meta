@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:echo-of-the-song/Assets/Game/Scripts/Installers.meta
 guid: bfde58d358becad4bb3c3fe6dfc150ca
+========
+guid: f54d1bd14bd3ca042bd867b519fee8cc
+>>>>>>>> origin/feature/Singer:echo-of-the-song/Assets/TextMesh Pro.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
