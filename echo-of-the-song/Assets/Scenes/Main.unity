@@ -2411,6 +2411,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 5846631451600427238}
     m_Modifications:
     - target: {fileID: 1802378931, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: _rayCount
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802378931, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
       propertyPath: _echoSpawner
       value: 
       objectReference: {fileID: 8228570238823974565}
