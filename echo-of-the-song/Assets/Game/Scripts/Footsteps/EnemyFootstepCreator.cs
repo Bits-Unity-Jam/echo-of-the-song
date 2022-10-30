@@ -26,7 +26,7 @@ namespace Game.Scripts.Footsteps
         private Footstep _lastFootstep;
         private Vector3 _lastPosition;
 
-        public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
+        public override Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
         [SerializeField]
         private NavMeshAgent agent;
         public event Action OnFootstepMade;
@@ -94,10 +94,10 @@ namespace Game.Scripts.Footsteps
         }
     }
 
-    public class BaseFootstepCreator : MonoBehaviour
+    public abstract class BaseFootstepCreator : MonoBehaviour
     {
         public event Action OnFootstepMade;
-
+        public abstract Vector3 LastFootstepCenter { get; }
         protected void SendFootstepMade() => OnFootstepMade?.Invoke();
     }
 }

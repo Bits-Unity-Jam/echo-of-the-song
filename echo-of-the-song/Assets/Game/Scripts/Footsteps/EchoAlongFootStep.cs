@@ -7,7 +7,7 @@ public class EchoAlongFootStep : MonoBehaviour
     private int _rayCount;
 
     [ SerializeField ]
-    private PlayerFootstepCreator _footstepCreator;
+    private BaseFootstepCreator _footstepCreator;
 
     [ SerializeField ]
     private EchoSpawner _echoSpawner;
