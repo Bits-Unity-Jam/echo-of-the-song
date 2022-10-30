@@ -24,10 +24,8 @@ namespace Game.Scripts.Footsteps
         private Footstep _lastFootstep;
         private Vector3 _lastPosition;
         private bool _isStarted;
-
-        public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
-
-        public event Action OnFootstepMade;
+        
+        public override Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
 
         [Inject]
         private void Construct(IFactory<PlayerFootstep> footstepFactory)
@@ -62,7 +60,6 @@ namespace Game.Scripts.Footsteps
         private void MakeFootstep()
         {
             CreateFootStep();
-            OnFootstepMade?.Invoke();
             SendFootstepMade();
         }
 
