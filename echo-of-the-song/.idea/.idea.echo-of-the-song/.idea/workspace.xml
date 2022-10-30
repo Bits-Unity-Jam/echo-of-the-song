@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/EnemyFootstepFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/EnemyFootstepFactoryInstaller.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/EnemyFootstepFactoryInstaller.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/PlayerFootstepFactory.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/PlayerFootstepFactory.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstep.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstepCreator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstepCreator.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/PlayerFootstep.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/PlayerFootstep.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemy-AI-Byndiu/AI_enemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy-AI-Byndiu/AI_enemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Left.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right 1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Footsteps/FootStep_Right.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/dev_jdm.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/dev_jdm.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/FootstepFactory.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/FootstepFactory.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/EnemyFootstepFactory.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/FootstepFactoryInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/PlayerFootstepFactoryInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/FootstepFactoryInstaller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Factories/PlayerFootstepFactoryInstaller.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/Footstep.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/Footstep.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstepCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EnemyFootstepCreator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/PlayerFootstepCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/PlayerFootstepCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Sounds/FootstepSounds/FootstepSoundHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Sounds/FootstepSounds/FootstepSoundHolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="E:\UnityHub\Editor\2021.3.12f1\Editor\Unity.exe" />
@@ -101,6 +82,7 @@
       <workItem from="1667022042837" duration="1569000" />
       <workItem from="1667023644295" duration="7374000" />
       <workItem from="1667088240421" duration="3160000" />
+      <workItem from="1667119798612" duration="1035000" />
     </task>
     <servers />
   </component>

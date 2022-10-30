@@ -1701,6 +1701,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI_enemy1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
 --- !u!4 &863443873 stripped
@@ -1952,6 +1956,10 @@ PrefabInstance:
     - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
       propertyPath: m_Name
       value: AI_enemy1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
@@ -2248,6 +2256,10 @@ PrefabInstance:
     - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
       propertyPath: m_Name
       value: AI_enemy1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
@@ -2672,6 +2684,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI_enemy1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
 --- !u!4 &1413097155 stripped
@@ -2704,7 +2720,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469371926}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &1469371928
 Camera:
   m_ObjectHideFlags: 0
@@ -34366,6 +34382,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI_enemy1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5046046427296040799, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3148435af4c2614a8efd9eefb92ce50, type: 3}
 --- !u!4 &1855702736 stripped
@@ -34982,7 +35002,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12455024}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!114 &3371403021635726191
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -52,7 +52,7 @@ namespace Game.Scripts.Footsteps
             
             switch (delta)
             {
-                case < 0.01f when isStaying == false:
+                case < 0.0001f when isStaying == false:
                     isStaying = true;
                     StartCoroutine(DoubleFootstepRoutine());
                     return;
@@ -76,7 +76,6 @@ namespace Game.Scripts.Footsteps
 
         public void CreateFootStep()
         {
-            var direction = transform.position - _lastPosition;
             _lastFootstep = stepPool.PullObject().GetComponent<Footstep>();
 
             previousFootstepPosition = transform.position;
@@ -88,7 +87,6 @@ namespace Game.Scripts.Footsteps
 
         private IEnumerator DoubleFootstepRoutine()
         {
-            Debug.Log("Enemy double step!");
             yield return new WaitForSeconds(0.7f);
             CreateFootStep();
             yield return new WaitForSeconds(0.7f);

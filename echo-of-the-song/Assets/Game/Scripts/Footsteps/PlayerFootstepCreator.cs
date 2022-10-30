@@ -41,7 +41,7 @@ namespace Game.Scripts.Footsteps
             
             switch (delta)
             {
-                case < 0.01f when isStaying == false:
+                case < 0.0001f when isStaying == false:
                     isStaying = true;
                     StartCoroutine(DoubleFootstepRoutine());
                     return;
