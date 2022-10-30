@@ -9,16 +9,18 @@ public class Echo : MonoBehaviour
     [SerializeField] private EchoMove _echoMove; 
     [SerializeField] private EchoTrail _echoTrail;
 
+    [SerializeField] private Collider2D _Collider;
+
     private float _currentTime;
 
     private void Start()
     {
-        gameObject.SetActive(false);
+        _Collider.enabled = false;
     }
 
     public void Emmit(Vector2 startDirection,Vector2 startPos,IntersectionArea rayType=IntersectionArea.White,bool constant=false)
     {
-        gameObject.SetActive(true);
+        _Collider.enabled = true;
         _currentTime = _lifeTime;
         Activated = true;
         transform.position = startPos;
@@ -52,7 +54,7 @@ public class Echo : MonoBehaviour
             _echoMove.IsMoving = false;
             _echoTrail.StopAllCoroutinesFading();
             StopAllCoroutines();
-            gameObject.SetActive(false);
+            _Collider.enabled = false;
         }
     }
 }
