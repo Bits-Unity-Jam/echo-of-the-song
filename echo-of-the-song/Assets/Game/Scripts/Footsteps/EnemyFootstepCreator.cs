@@ -21,8 +21,7 @@ namespace Game.Scripts.Footsteps
         [ ReadOnly ]
         [ SerializeField ]
         public bool isStaying;
-        
-        private IFactory<Footstep> _footstepFactory;
+
         private Footstep _lastFootstep;
         private Vector3 _lastPosition;
 
@@ -34,11 +33,6 @@ namespace Game.Scripts.Footsteps
         [ SerializeField ]
         private Pool stepPool;
 
-        [Inject]
-        private void Construct(IFactory<EnemyFootstep> footstepFactory)
-        {
-            _footstepFactory = footstepFactory;
-        }
 
         private void Start()
         {
