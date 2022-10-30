@@ -46,8 +46,13 @@ public class Echo : MonoBehaviour
 
     private void Deactivation()
     {
-        Activated = false;
-        _echoMove.IsMoving = false;
-        gameObject.SetActive(false);
+        if (Activated)
+        {
+            Activated = false;
+            _echoMove.IsMoving = false;
+            _echoTrail.StopAllCoroutinesFading();
+            StopAllCoroutines();
+            gameObject.SetActive(false);
+        }
     }
 }

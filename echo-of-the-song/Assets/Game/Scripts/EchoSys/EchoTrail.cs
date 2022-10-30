@@ -187,8 +187,10 @@ public class EchoTrail : MonoBehaviour
       _currentA = 0.47f;
       Deactivate();
       _colorStep = (1 / (lifeTime / Time.fixedDeltaTime));
-
-      StartEmit(rayType);
+      if (Activated)
+      {
+         StartEmit(rayType);
+      }
    }
    private void StartEmit(IntersectionArea area)
    {
@@ -224,5 +226,10 @@ public class EchoTrail : MonoBehaviour
          StopCoroutine(_currentTail.FadingCoroutine);
          _currentTail.FadingCoroutine = null;
       }
+   }
+
+   public void StopAllCoroutinesFading()
+   {
+      StopAllCoroutines();
    }
 }
