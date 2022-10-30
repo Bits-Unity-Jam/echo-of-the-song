@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d88299b556db84fbffb0d1b9030988, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _lifeTime: 7
+  _lifeTime: 17
   _echoMove: {fileID: 2224683431450893009}
   _echoTrail: {fileID: 516577912}
   _Collider: {fileID: 2224683431450893011}
