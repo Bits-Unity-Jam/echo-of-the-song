@@ -2511,7 +2511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
-  _poolSize: 200
+  _poolSize: 250
   _rayType: 2
   _constant: 0
 --- !u!114 &8228570240520867104
@@ -2585,6 +2585,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5846631451600427238}
     m_Modifications:
+    - target: {fileID: 1802378931, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
+      propertyPath: _rayCount
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1802378931, guid: e36b9e554a9ee30479ec6b97e5b76b8d, type: 3}
       propertyPath: _echoSpawner
       value: 
