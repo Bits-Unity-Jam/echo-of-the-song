@@ -23,11 +23,7 @@ namespace Game.Scripts.UI.GameplayCanvas.Hud
 
         private void OnAmountChanged(int amount)
         {
-<<<<<<< HEAD
             _text.text = amount.ToString()+"/22"; //TODO
-=======
-            _text.text = amount.ToString();
->>>>>>> e2ae40c3a21f17b41eb12121041a0664d2e36211
         }
     }
 }
