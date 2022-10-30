@@ -144,6 +144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
-  _poolSize: 50
+  _poolSize: 20
   _rayType: 3
   _constant: 1

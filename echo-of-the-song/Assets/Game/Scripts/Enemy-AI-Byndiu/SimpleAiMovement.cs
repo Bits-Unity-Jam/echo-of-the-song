@@ -13,8 +13,6 @@ public class SimpleAiMovement : MonoBehaviour
 
     [SerializeField] private float _speed;
     [SerializeField]
-    Path path;
-    [SerializeField]
     private Transform target;
     [SerializeField]
     private float trigerDistance;
@@ -36,7 +34,7 @@ public class SimpleAiMovement : MonoBehaviour
         _agent.updateRotation = false;
         _agent.updateUpAxis = false;
 
-        _wayPoints = path.WayPoints;
+        /*_wayPoints = path.WayPoints;*/
         var agent = transform.GetComponent<NavMeshAgent>();
         agent.enabled = false;
         /*transform.position = _wayPoints[0].position;*/

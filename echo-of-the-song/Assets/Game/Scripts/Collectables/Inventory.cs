@@ -7,17 +7,20 @@ namespace Mechanics.Collectable
     public class Inventory:MonoBehaviour
     {
         public event Action<int> ChangedAmount;
+        public event Action<bool> Hold;
 
         private int _collectablesAmount;
         
         public void AddItem()
         {
             _collectablesAmount++;
-            ChangedAmount?.Invoke(_collectablesAmount);
+            Hold?.Invoke(true);
         }
         
         public int GiveItem()
         {
+            ChangedAmount?.Invoke(_collectablesAmount);
+            Hold?.Invoke(false);
             return _collectablesAmount;
         }
     }
