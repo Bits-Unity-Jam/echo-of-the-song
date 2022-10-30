@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fd8a74ec56e8f843804b63890292971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loseScreen: {fileID: 0}
+  _LoaderScreen: {fileID: 0}
+  _SceneLoader: {fileID: 0}
+  _player: {fileID: 0}
+  _delayReload: 2
