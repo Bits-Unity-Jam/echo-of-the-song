@@ -16,8 +16,6 @@ public class EchoSpawner : MonoBehaviour
         IntersectionArea _rayType;
 
     [SerializeField] private bool _constant;
-    
-    
 
     private Echo[] _echos;
 

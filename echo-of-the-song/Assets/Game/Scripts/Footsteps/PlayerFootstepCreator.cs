@@ -55,6 +55,8 @@ namespace Game.Scripts.Footsteps
                 maxDistanceBetweenFootsteps) return;
             
             MakeFootstep();
+            SendFootstepMade();
+            OnFootstepMade?.Invoke();
         }
 
         private void MakeFootstep()
