@@ -22,7 +22,7 @@ public class OnCollection : MonoBehaviour
 
     private void OnCollect()
     {
-        _echoSpawner.Spawn(transform.position,50);
+        _echoSpawner.Spawn(transform.position,10);
         Destroy(gameObject,_destroyDelay);
     }
 }

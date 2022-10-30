@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (6)
@@ -213,11 +217,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9073821291885490551, guid: bc381ed363914554d87ee397661fe98e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.5100002
+      value: 109.63
       objectReference: {fileID: 0}
     - target: {fileID: 9073821291885490551, guid: bc381ed363914554d87ee397661fe98e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.1000001
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 9073821291885490551, guid: bc381ed363914554d87ee397661fe98e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -271,11 +275,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8001996817648651622, guid: a8d1e6fbfe8dda74094ad6826f23c0db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.9
+      value: -1.3
       objectReference: {fileID: 0}
     - target: {fileID: 8001996817648651622, guid: a8d1e6fbfe8dda74094ad6826f23c0db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 112.3
+      value: 26.9
       objectReference: {fileID: 0}
     - target: {fileID: 8001996817648651622, guid: a8d1e6fbfe8dda74094ad6826f23c0db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -322,14 +326,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3340544687302097951, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: _rayCount
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340544687403351206, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3340544687403351207, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
@@ -338,46 +334,22 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1035015973}
-    - target: {fileID: 3340544687478378637, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3340544687500586214, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1035015973}
-    - target: {fileID: 3340544687500586215, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3340544687707017196, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1035015973}
-    - target: {fileID: 3340544687707017197, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3340544687960927726, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1035015973}
-    - target: {fileID: 3340544687960927727, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3340544688067923426, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3340544688067923427, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1035015973}
-    - target: {fileID: 7520122749469695876, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7520122749469695877, guid: a4c6f20339801414bb31ba710a472d0c, type: 3}
       propertyPath: target
       value: 
@@ -444,6 +416,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (15)
@@ -501,6 +477,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (20)
@@ -563,6 +543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (17)
@@ -620,6 +604,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta
@@ -687,6 +675,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (12)
@@ -744,6 +736,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (10)
@@ -806,6 +802,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (14)
@@ -863,6 +863,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (1)
@@ -936,6 +940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 6782531640954697289, guid: 00a95545c8d1c5945b6cc0912d922d47, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6782531640954697294, guid: 00a95545c8d1c5945b6cc0912d922d47, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -999,6 +1007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (18)
@@ -1061,6 +1073,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (11)
@@ -1118,6 +1134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (19)
@@ -1185,6 +1205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (21)
@@ -1252,6 +1276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (7)
@@ -1314,6 +1342,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (5)
@@ -1371,6 +1403,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (2)
@@ -1449,6 +1485,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (9)
@@ -1506,9 +1546,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 854147509, guid: 947924777c140b34da7887bd3c159c71, type: 3}
+      propertyPath: _rayCount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2759227164870633584, guid: 947924777c140b34da7887bd3c159c71, type: 3}
       propertyPath: m_Name
       value: ForPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 2759227164870633584, guid: 947924777c140b34da7887bd3c159c71, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4348393783262448262, guid: 947924777c140b34da7887bd3c159c71, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1524,11 +1572,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5846631452531378144, guid: 947924777c140b34da7887bd3c159c71, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.88
+      value: 109
       objectReference: {fileID: 0}
     - target: {fileID: 5846631452531378144, guid: 947924777c140b34da7887bd3c159c71, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 28.3
       objectReference: {fileID: 0}
     - target: {fileID: 5846631452531378144, guid: 947924777c140b34da7887bd3c159c71, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1566,6 +1614,10 @@ PrefabInstance:
       propertyPath: _rayType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 8228570240057022883, guid: 947924777c140b34da7887bd3c159c71, type: 3}
+      propertyPath: _poolSize
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947924777c140b34da7887bd3c159c71, type: 3}
 --- !u!1001 &1526970040
@@ -1575,6 +1627,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (16)
@@ -1690,6 +1746,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (13)
@@ -1752,6 +1812,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (8)
@@ -1814,6 +1878,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (4)
@@ -1871,6 +1939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1651393486}
     m_Modifications:
+    - target: {fileID: 152319240, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
+      propertyPath: _poolSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 8063251979069450882, guid: 75eeb582db67f6740924f05506e720a4, type: 3}
       propertyPath: m_Name
       value: Ruta (3)

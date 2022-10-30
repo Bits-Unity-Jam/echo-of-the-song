@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class TimeEchoSpawn : MonoBehaviour
 {
+    
+    public bool Active { get; set; }
+    
     [SerializeField] private EchoSpawner _EchoSpawner;
     [SerializeField] private float _time;
     [SerializeField] private int _rayCount;
@@ -19,6 +22,7 @@ public class TimeEchoSpawn : MonoBehaviour
 
     private void Update()
     {
+        if (!Active) return;
         if(_currentTime<=0)
         {
             _EchoSpawner.Spawn(transform.position,_rayCount);

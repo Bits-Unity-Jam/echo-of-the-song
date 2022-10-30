@@ -143,7 +143,10 @@ public class EchoTrail : MonoBehaviour
       _currentTail = _whiteTail;
       ResetFading();
       _currentTail.StartRender();
-      _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      if (Activated)
+      {
+         _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      }
    }
 
    private void EmmitRed()
@@ -151,7 +154,10 @@ public class EchoTrail : MonoBehaviour
       _currentTail = _redTail;
       ResetFading();
       _currentTail.StartRender();
-      _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      if (Activated)
+      {
+         _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      }
    }
    
    private void EmmitYellow()
@@ -159,7 +165,10 @@ public class EchoTrail : MonoBehaviour
       _currentTail = _yellowTail;
       ResetFading();
       _currentTail.StartRender();
-      _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      if (Activated)
+      {
+         _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      }
    }
    
    private void EmmitGreen()
@@ -167,7 +176,10 @@ public class EchoTrail : MonoBehaviour
       _currentTail = _greenTail;
       ResetFading();
       _currentTail.StartRender();
-      _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      if (Activated)
+      {
+         _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
+      }
    }
    public void Initialize(float lifeTime,IntersectionArea rayType=IntersectionArea.White,bool constant=false)
    {

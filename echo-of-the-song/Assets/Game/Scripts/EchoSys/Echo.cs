@@ -10,9 +10,15 @@ public class Echo : MonoBehaviour
     [SerializeField] private EchoTrail _echoTrail;
 
     private float _currentTime;
-    
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
+
     public void Emmit(Vector2 startDirection,Vector2 startPos,IntersectionArea rayType=IntersectionArea.White,bool constant=false)
     {
+        gameObject.SetActive(true);
         _currentTime = _lifeTime;
         Activated = true;
         transform.position = startPos;
@@ -25,7 +31,7 @@ public class Echo : MonoBehaviour
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (Activated&&_currentTime >= 0)
         {
@@ -42,5 +48,6 @@ public class Echo : MonoBehaviour
     {
         Activated = false;
         _echoMove.IsMoving = false;
+        gameObject.SetActive(false);
     }
 }

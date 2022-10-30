@@ -404,6 +404,7 @@ MonoBehaviour:
   _lifeTime: 7
   _echoMove: {fileID: 2224683431450893009}
   _echoTrail: {fileID: 516577912}
+  _rigidbody2D: {fileID: 2224683431450893010}
 --- !u!114 &516577914
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using Game.Scripts.Footsteps;
 using UnityEngine;
@@ -22,7 +23,7 @@ public class EchoSpawner : MonoBehaviour
 
     private void Start()
     {
-        GeneratePool();
+       StartCoroutine( GeneratePool());
     }
     
 
@@ -46,13 +47,18 @@ public class EchoSpawner : MonoBehaviour
         }
     }
 
-    private void GeneratePool()
+    private IEnumerator GeneratePool()
     {
         _echos = new Echo[_poolSize];
         for (int i = 0; i < _poolSize; i++)
         {
             Echo echoMove = Instantiate(echoMovePrefabs, transform);
             _echos[i] = echoMove;
+            
+            if (i % 10 == 0)//10  every frame
+            {
+                yield return null;
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,12 @@ using UnityEngine.AI;
 
 public class SimpleAiMovement : MonoBehaviour
 {
+    public event Action<bool> PlayerDetected;
+
+    private bool _detectionInvoked;
+
+
+    [SerializeField] private float _speed;
     [SerializeField]
     Path path;
     [SerializeField]
@@ -34,6 +41,8 @@ public class SimpleAiMovement : MonoBehaviour
         agent.enabled = false;
         transform.position = _wayPoints[0].position;
         agent.enabled = true;
+
+        _agent.speed = _speed;
     }
 
     private void Update()
@@ -98,11 +107,22 @@ public class SimpleAiMovement : MonoBehaviour
         if (distance < trigerDistance)
         {
             _isTrigeredByPlayer = true;
+            if (!_detectionInvoked)
+            {
+                _detectionInvoked = true;
+                PlayerDetected?.Invoke(true);
+            }
         }
 
         if (distance > escapeDistance)
         {
             _isTrigeredByPlayer = false;
+            
+            if (_detectionInvoked)
+            {
+                _detectionInvoked = false;
+                PlayerDetected?.Invoke(false);
+            }
         }
 
         if (_isTrigeredByPlayer)
