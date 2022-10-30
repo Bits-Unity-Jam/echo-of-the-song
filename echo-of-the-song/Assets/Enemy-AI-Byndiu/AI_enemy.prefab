@@ -281,7 +281,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 0.9
-  path: {fileID: 0}
   target: {fileID: 0}
   trigerDistance: 10
   escapeDistance: 20
@@ -328,7 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d585728cb877e44bbe9ff0f6a59c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  echoMovePrefabs: {fileID: 516577913, guid: 404b295e766dcc941bf36df06ad5bf16, type: 3}
+  echoMovePrefabs: {fileID: 516577913, guid: b280921b3d47776469d74bbca5ccc9c0, type: 3}
   _poolSize: 20
   _rayType: 0
   _constant: 1
