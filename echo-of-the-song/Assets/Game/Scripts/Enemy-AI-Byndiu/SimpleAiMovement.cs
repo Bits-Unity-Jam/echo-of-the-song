@@ -39,7 +39,7 @@ public class SimpleAiMovement : MonoBehaviour
         _wayPoints = path.WayPoints;
         var agent = transform.GetComponent<NavMeshAgent>();
         agent.enabled = false;
-        transform.position = _wayPoints[0].position;
+        /*transform.position = _wayPoints[0].position;*/
         agent.enabled = true;
 
         _agent.speed = _speed;
@@ -53,10 +53,10 @@ public class SimpleAiMovement : MonoBehaviour
         {
             FollowPlayerMove();
 
-            if (!_isTrigeredByPlayer)
+            /*if (!_isTrigeredByPlayer)
             {
                 PathMove();
-            }
+            }*/
         }
 
         //var distance = Vector2.Distance(gameObject.transform.position, target.transform.position);
