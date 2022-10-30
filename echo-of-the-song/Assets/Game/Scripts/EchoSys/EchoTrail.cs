@@ -47,9 +47,9 @@ public class EchoTrail : MonoBehaviour
    private Tail _yellowTail;
 
    private Tail _currentTail;
-
-
+   
    private float _currentA;
+   private bool _constant;
 
    private void Awake()
    {
@@ -98,7 +98,12 @@ public class EchoTrail : MonoBehaviour
 
    private void HandleIntersection(IntersectionArea area)
    {
+      if (_constant)
+      {
+         return;
+      }
       if (!Activated) return;
+      
       _currentTail.renderer.emitting = false;
       
       switch (area)
@@ -164,12 +169,32 @@ public class EchoTrail : MonoBehaviour
       _currentTail.StartRender();
       _currentTail.FadingCoroutine=StartCoroutine(Fading(_currentTail));
    }
-   public void SetLifeTime(float lifeTime)
+   public void Initialize(float lifeTime,IntersectionArea rayType=IntersectionArea.White,bool constant=false)
    {
+      _constant = constant;
       _currentA = 0.47f;
       Deactivate();
       _colorStep = (1 / (lifeTime / Time.fixedDeltaTime));
-      EmmitWhite();
+
+      StartEmit(rayType);
+   }
+   private void StartEmit(IntersectionArea area)
+   {
+      switch (area)
+      {
+         case IntersectionArea.Red:
+            EmmitRed();
+            break;
+         case IntersectionArea.White:
+            EmmitWhite();
+            break;
+         case IntersectionArea.Yellow:
+            EmmitYellow();
+            break;
+         case IntersectionArea.Green:
+            EmmitGreen();
+            break;
+      }
    }
 
    private void Deactivate()

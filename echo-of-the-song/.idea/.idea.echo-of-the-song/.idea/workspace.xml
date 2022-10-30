@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf5f30cb-2e74-45cf-9976-e60402501ebe" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Enemy-AI-Byndiu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.echo-of-the-song/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/Echo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/EchoTrail.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskPresentor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Singer/TaskPresentor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/dev_Oleh.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/40/ef171780/Renderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/4a/0169707f/Component.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/de/8c79c7e3/SpriteRenderer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../bayraktar-game/Assets/Game/Mechanics/Factories/FireFactoryInstaller.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Footsteps/EchoAlongFootStep.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/EchoSys/TestInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Sounds/FootstepSounds/FootstepSoundHolder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.4.3/InputSystem/Utilities/DelegateHelpers.cs" root0="SKIP_HIGHLIGHTING" />
@@ -46,10 +57,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1664">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1664" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -68,6 +79,7 @@
       <workItem from="1666984246409" duration="10678000" />
       <workItem from="1667022042837" duration="1569000" />
       <workItem from="1667023644295" duration="7374000" />
+      <workItem from="1667111478897" duration="1167000" />
     </task>
     <servers />
   </component>

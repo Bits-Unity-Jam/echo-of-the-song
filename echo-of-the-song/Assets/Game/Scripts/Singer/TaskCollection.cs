@@ -16,7 +16,7 @@ public class TaskCollection : MonoBehaviour
         TaskSetuped?.Invoke(_taskAmount);
     }
 
-    public void Completed(int getItemAmount)
+    public void SetCompleted(int getItemAmount)
     {
         _currentTasks -= getItemAmount;
         if (_currentTasks <= 0)

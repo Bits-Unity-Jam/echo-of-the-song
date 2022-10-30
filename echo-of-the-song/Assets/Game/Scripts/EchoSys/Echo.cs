@@ -11,7 +11,7 @@ public class Echo : MonoBehaviour
 
     private float _currentTime;
     
-    public void Emmit(Vector2 startDirection,Vector2 startPos)
+    public void Emmit(Vector2 startDirection,Vector2 startPos,IntersectionArea rayType=IntersectionArea.White,bool constant=false)
     {
         _currentTime = _lifeTime;
         Activated = true;
@@ -21,7 +21,7 @@ public class Echo : MonoBehaviour
         _echoMove.IsMoving = true;
         
         _echoTrail.Activated = true;
-        _echoTrail.SetLifeTime(_lifeTime);
+        _echoTrail.Initialize(_lifeTime,rayType,constant);
     }
 
 

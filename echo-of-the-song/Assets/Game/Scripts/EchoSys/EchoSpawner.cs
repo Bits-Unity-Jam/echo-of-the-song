@@ -10,6 +10,11 @@ public class EchoSpawner : MonoBehaviour
 
     [ SerializeField ]
     private int _poolSize;
+
+    [SerializeField] private
+        IntersectionArea _rayType;
+
+    [SerializeField] private bool _constant;
     
     
 
@@ -31,7 +36,7 @@ public class EchoSpawner : MonoBehaviour
             {
                 Echo freeEchoMove = _echos.First(echo => !echo.Activated);
                 Vector2 dir = Quaternion.Euler(0, 0, rotation) * Vector2.up;
-                freeEchoMove.Emmit(dir, pos);
+                freeEchoMove.Emmit(dir, pos,_rayType,_constant);
                 rotation += step;
             }
         }

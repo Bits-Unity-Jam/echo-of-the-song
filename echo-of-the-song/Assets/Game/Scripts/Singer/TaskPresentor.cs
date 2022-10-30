@@ -10,7 +10,7 @@ public class TaskPresentor : MonoBehaviour
     {
         if (col.TryGetComponent(out CollectPresentor collectPresentor))
         {
-            _taskCollection.Completed(collectPresentor.GetItemAmount());
+            _taskCollection.SetCompleted(collectPresentor.GetItemAmount());
         }
     }
 }
