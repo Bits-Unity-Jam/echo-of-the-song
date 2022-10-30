@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: afe5a28a280d7794bab02f75b28b8a4e
+=======
+<<<<<<< HEAD:echo-of-the-song/Assets/Game/Prefabs/EchoSys.meta
+guid: 0fe15a2121b286540b67d1dffd32e25e
+=======
+guid: 625b8927250344340abaaa2fab1266d5
+>>>>>>> e2ae40c3a21f17b41eb12121041a0664d2e36211:echo-of-the-song/Assets/Game/Scripts/Singer.meta
+>>>>>>> e2ae40c3a21f17b41eb12121041a0664d2e36211
+folderAsset: yes
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

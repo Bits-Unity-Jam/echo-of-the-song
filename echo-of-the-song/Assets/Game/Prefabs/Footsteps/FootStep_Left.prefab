@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6741412246651503909}
   - component: {fileID: 1918174999235400922}
-  - component: {fileID: 8591031247857648399}
+  - component: {fileID: 5824072096923717044}
   m_Layer: 0
   m_Name: FootStep_Left
   m_TagString: Untagged
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23861785b92249fb957a2928eb1d6aad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8591031247857648399
+--- !u!114 &5824072096923717044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,10 +224,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8880789401061271287}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 754bdf5712d6b344a976c55315e1618e, type: 3}
+  m_Script: {fileID: 11500000, guid: a9e7191862c14f9ab0979afed0fbabda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   poolObject: {fileID: 1918174999235400922}
-  footSprite: {fileID: 9024010670967246403}
+  footSprite: {fileID: 6523725611967731054}
   lifeTime: 30
   lastedLifeTime: 0

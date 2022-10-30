@@ -33,7 +33,7 @@ namespace Game.Scripts.Sounds.FootstepSounds
         private bool isLeftStepNext;
 
         [SerializeField]
-        private PlayerFootstepCreator _playerFootstepCreator;
+        private BaseFootstepCreator _playerFootstepCreator;
 
         //[ Inject ]
         //private void Construct(PlayerFootstepCreator playerFootstepCreator) => _playerFootstepCreator = playerFootstepCreator;

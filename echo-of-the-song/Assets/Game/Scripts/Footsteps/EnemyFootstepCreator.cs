@@ -1,12 +1,14 @@
-using System;
+﻿using System;
 using System.Collections;
+using Game.Scripts.ObjectsPools;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.AI;
 using Zenject;
 
 namespace Game.Scripts.Footsteps
 {
-    public class PlayerFootstepCreator : BaseFootstepCreator
+    public class EnemyFootstepCreator : BaseFootstepCreator
     {
         [ Range(0, 2) ]
         [ SerializeField ]
@@ -25,13 +27,22 @@ namespace Game.Scripts.Footsteps
         private Vector3 _lastPosition;
 
         public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
-
+        [SerializeField]
+        private NavMeshAgent agent;
         public event Action OnFootstepMade;
 
+        [ SerializeField ]
+        private Pool stepPool;
+
         [Inject]
-        private void Construct(IFactory<PlayerFootstep> footstepFactory)
+        private void Construct(IFactory<EnemyFootstep> footstepFactory)
         {
             _footstepFactory = footstepFactory;
+        }
+
+        private void Start()
+        {
+            stepPool.transform.parent = null;
         }
 
         private void Update()
@@ -65,13 +76,13 @@ namespace Game.Scripts.Footsteps
 
         public void CreateFootStep()
         {
-            _lastFootstep = _footstepFactory.Create();
+            _lastFootstep = stepPool.PullObject().GetComponent<Footstep>();
 
             previousFootstepPosition = transform.position;
             Transform footstepTransform = _lastFootstep.transform;
             
             footstepTransform.position = transform.position;
-            footstepTransform.up = transform.up;
+            footstepTransform.up = agent.velocity.normalized;
         }
 
         private IEnumerator DoubleFootstepRoutine()
@@ -81,5 +92,12 @@ namespace Game.Scripts.Footsteps
             yield return new WaitForSeconds(0.7f);
             CreateFootStep();
         }
+    }
+
+    public class BaseFootstepCreator : MonoBehaviour
+    {
+        public event Action OnFootstepMade;
+
+        protected void SendFootstepMade() => OnFootstepMade?.Invoke();
     }
 }
