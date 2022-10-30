@@ -6,16 +6,14 @@ using Zenject;
 
 public class ScreenManager : MonoBehaviour
 {
-    [SerializeField]
-    private LoseScreen loseScreen;
+    [SerializeField] private GameObject _LoaderScreen;
+    [SerializeField] private SceneLoader _SceneLoader;
 
-    private Player _player;
+    [SerializeField]private PlayerDeath _player;
 
-    [Inject]
-    public void Construct(Player player)
-    {
-        _player = player;
-    }
+    [SerializeField] private float _delayReload;
+
+   
 
     private void Awake()
     {
@@ -24,11 +22,20 @@ public class ScreenManager : MonoBehaviour
 
     private void _player_OnDie()
     {
-        loseScreen.Open();
+        _LoaderScreen.SetActive(true);
+
+        StartCoroutine(DelayedReload());
     }
 
     private void OnDestroy()
     {
         _player.OnDie -= _player_OnDie;
+    }
+
+
+    private IEnumerator DelayedReload()
+    {
+        yield return new WaitForSeconds(_delayReload);
+        _SceneLoader.ReloadScene();
     }
 }
