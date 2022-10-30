@@ -23,6 +23,7 @@ namespace Game.Scripts.Footsteps
         private IFactory<Footstep> _footstepFactory;
         private Footstep _lastFootstep;
         private Vector3 _lastPosition;
+        private bool _isStarted;
 
         public Vector3 LastFootstepCenter => _lastFootstep.SpriteCenter;
 
@@ -33,9 +34,10 @@ namespace Game.Scripts.Footsteps
         {
             _footstepFactory = footstepFactory;
         }
-
+        
         private void Update()
         {
+            
             var delta = Vector3.Distance(_lastPosition, transform.position);
             _lastPosition = transform.position;
             
@@ -60,6 +62,7 @@ namespace Game.Scripts.Footsteps
         private void MakeFootstep()
         {
             CreateFootStep();
+            OnFootstepMade?.Invoke();
             SendFootstepMade();
         }
 
@@ -76,6 +79,7 @@ namespace Game.Scripts.Footsteps
 
         private IEnumerator DoubleFootstepRoutine()
         {
+            if (Time.timeScale == 0) yield return null;
             yield return new WaitForSeconds(0.7f);
             CreateFootStep();
             yield return new WaitForSeconds(0.7f);
